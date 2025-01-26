@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выбор тестов</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1 test-id="list-title">Выберите тест</h1>
+    <p test-id="list-subtitle">Доступные тесты:</p>
+    <div id="test-list" test-id="list-items">
+      <!-- Тесты будут добавляться сюда динамически -->
+    </div>
+    <button id="add-test-button" test-id="list-add-button">+ Добавить тест</button>
+    <button id="go-to-test-page">Перейти к тестам</button>
+
+    <!-- Модальное окно для добавления теста -->
+    <div id="form-modal" test-id="form-modal" class="modal">
+      <div test-id="form-title">Добавить тест</div>
+      <input id="new-test-title" test-id="new-test-title" placeholder="Название теста">
+      <div id="questions-form">
+        <!-- Вопросы будут добавляться сюда динамически -->
+      </div>
+      <button id="add-question-button" test-id="add-question-button">+ Добавить вопрос</button>
+      <button id="remove-question-button" test-id="remove-question-button">- Удалить вопрос</button>
+      <button id="save-button" test-id="save-button">Сохранить</button>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
